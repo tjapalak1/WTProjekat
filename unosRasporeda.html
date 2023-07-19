@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+<TITLE>Unos</TITLE>
+<link rel="stylesheet" type="text/css" href="css/navigacija.css" />
+<link rel="stylesheet" type="text/css" href="css/stilUnosa.css" />
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</HEAD>
+<BODY>
+  <div class="navigacija">
+    <a href="podaciStudent.html">Student podaci</a>
+    <a href="unosRasporeda.html">Unos rasporeda</a>
+    <a href="aktivnost.html">Aktivnosti</a>
+    <a href="raspored.html">Raspored</a>
+    <a href="planiranjeNastavnik.html">Planiranje nastavnik</a>
+  </div>
+  <h1>Unos rasporeda</h1>
+
+  <form id="mojaForma" method="post">
+    <ul>
+     <li>
+      <label for="nazivpredmeta">Naziv predmeta:</label>
+      <input type="text" id="nazivPredmeta"><br>
+     </li>
+     <li>
+      <label for="izbor">Tip:</label>
+      <select id="izborTip" >
+      </select>
+     </li>
+    <li>
+    <label for="početak">Vrijeme početka:</label>
+    <input type="number" id="pocetakAktivnosti" min="8" max="20" step=".1">
+               <br>
+      </li>
+      <li> <label for="kraj">Vrijeme kraja:</label></li>
+      <li>
+              <input type="number" id="krajAktivnosti" min="8" max="20" step=".1">
+              
+      <li>
+        <li> <label for="dani">Grupe:</label>
+          <select id="grupe" name="dani">
+          </select></li>
+        
+      <label for="dani">Dan u sedmici:</label>
+      <select id="dan" name="dani">
+      </select></li>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </ul>
+   </form>
+   <div id="postResultDiv">Traka obavijesti:
+  </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="ajaxForma.js"></script>
+</BODY>
+</HTML>

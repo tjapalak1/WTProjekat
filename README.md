@@ -1,3 +1,4 @@
-Nakon kloniranja repozitorija potrebno se pozicionirati na klonirani folder kroz konzolu i pokrenuti komandu "npm install" te bi sve funkcionalnosti trebale raditi
+- serverski JS fajl je "index.js"
+- za pokretanje testova koristi se "npm run test" u CMD-u
+- za pokretanje testova potrebno je u folderu gdje je kloniran repozitorij dodati mochu i express "npm install mocha" i "npm install express"
 
-Za pokretanje autotestova potrebno je kroz konzolu, nakon pozicioniranja na mjesto gdje se isti nalaze, kucati "npm test" te bi se isti trebali pokrenuti bez problema

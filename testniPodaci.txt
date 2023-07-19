@@ -1,0 +1,29 @@
+DELETE,/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"}
+GET,/predmeti,null,[]
+POST,/predmet,{\"naziv\":\"RMA\"},{\"message\":\"Uspješno dodan predmet!\"}
+GET,/predmeti,null,[{\"naziv\":\"RMA\"}]
+POST,/predmet,{\"naziv\":\"WT\"},{\"message\":\"Uspješno dodan predmet!\"}
+POST,/predmet,{\"naziv\":\"WT\"},{\"message\":\"Naziv predmeta postoji!\"}
+POST,/predmet,{\"naziv\":\"RMS\"},{\"message\":\"Uspješno dodan predmet!\"}
+GET,/predmeti,null,[{\"naziv\":\"RMA\"},{\"naziv\":\"WT\"},{\"naziv\":\"RMS\"}]
+DELETE,/predmet/WT,null,{\"message\":\"Uspješno obrisan predmet!\"}
+DELETE,/predmet/AFJ,null,{\"message\":\"Greška - predmet nije obrisan!\"}
+GET,/predmeti,null,[{\"naziv\":\"RMA\"},{\"naziv\":\"RMS\"}]
+POST,/predmet,{\"naziv\":\"VVS\"},{\"message\":\"Uspješno dodan predmet!\"}
+GET,/predmeti,null,[{\"naziv\":\"RMA\"},{\"naziv\":\"RMS\"},{\"naziv\":\"VVS\"}]
+POST,/aktivnost,{\"naziv\":\"VVS\",\"tip\":\"predavanje\",\"pocetak\":10,\"kraj\":12,\"dan\":\"utorak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+POST,/aktivnost,{\"naziv\":\"RMS\",\"tip\":\"predavanje\",\"pocetak\":11,\"kraj\":12,\"dan\":\"utorak\"},{\"message\":\"Aktivnost nije validna!\"}
+POST,/aktivnost,{\"naziv\":\"RMS\",\"tip\":\"predavanje\",\"pocetak\":11,\"kraj\":12,\"dan\":\"srijeda\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+POST,/aktivnost,{\"naziv\":\"WT\",\"tip\":\"vježbe\",\"pocetak\":9,\"kraj\":11,\"dan\":\"utorak\"},{\"message\":         \"Aktivnost nije validna!\"}
+POST,/aktivnost,{\"naziv\":\"RMS\",\"tip\":\"predavanje\",\"pocetak\":9,\"kraj\":10,\"dan\": \"utorak\"},{\"message\":\"Uspješno dodana aktivnost!\"}
+GET,/aktivnosti,null,[{\"naziv\":\"VVS\",\"tip\":\"predavanje\",\"pocetak\": 10,\"kraj\":12,\"dan\":\"utorak\"},{\"naziv\":\"RMS\",\"tip\":\"predavanje\",\"pocetak\":11,\"kraj\":12,\"dan\":\"srijeda\"},{\"naziv\":\"RMS\",\"tip\":\"predavanje\",\"pocetak\":9,\"kraj\":10,\"dan\":\"utorak\"}]
+GET,/predmet/RMS/aktivnost,null,[{\"naziv\":\"RMS\",\"tip\":\"predavanje\",\"pocetak\":11,\"kraj\":12,\"dan\":\"srijeda\"},{\"naziv\":\"RMS\",\"tip\":\"predavanje\",\"pocetak\":9,\"kraj\":10,\"dan\":\"utorak\"}]
+GET,/predmet/AFJ/aktivnost,null,[]
+GET,/predmet/VVS/aktivnost,null,[{\"naziv\":\"VVS\",\"tip\":\"predavanje\",\"pocetak\":10,\"kraj\":12,\"dan\":\"utorak\"}]
+POST,/aktivnost,{"naziv":"AFJ","tip":"predavanje","pocetak":11,"kraj":14,"dan":"petak"},{"message":"Uspješno dodana aktivnost!"}
+DELETE,/aktivnost/WT,null,{\"message\":\"Greška - aktivnost nije obrisana!\"}
+DELETE,/aktivnost/RMS,null,{\"message\":\"Uspješno obrisana aktivnost!\"}
+GET,/aktivnosti,null,[{\"naziv\":\"VVS\",\"tip\":\"predavanje\",\"pocetak\": 10,\"kraj\":12,\"dan\":\"utorak\"},{\"naziv\":\"AFJ\",\"tip\":\"predavanje\",\"pocetak\":11,\"kraj\":14,\"dan\":\"petak\"}]
+DELETE,/all,null,{\"message\":\"Uspješno obrisan sadržaj datoteka!\"}
+GET,/aktivnosti,null,[]
+GET,/predmeti,null,[]

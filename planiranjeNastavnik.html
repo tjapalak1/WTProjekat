@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+<TITLE>Zadatak 4</TITLE>
+<link rel="stylesheet" type="text/css" href="css/navigacija.css" />
+<link rel="stylesheet" type="text/css" href="css/stilUnosa.css" />
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</HEAD>
+<BODY>
+    <div class="navigacija">
+        <a href="podaciStudent.html">Student podaci</a>
+        <a href="unosRasporeda.html">Unos rasporeda</a>
+        <a href="aktivnost.html">Aktivnosti</a>
+        <a href="raspored.html">Raspored</a>
+        <a href="planiranjeNastavnik.html">Planiranje nastavnik</a>
+      </div>
+  <h1>Unos za profesora</h1>
+  <form action="mojaforma" method="post">
+    <ul>
+     <li>
+      <label for="nazivpredmeta">Naziv predmeta:</label>
+      <input type="text" id="nazivpredmeta" name="fname"><br>
+     </li>
+     <li>
+      <label for="izbor">Tip:</label>
+      <select id="izbor" name="izbor">
+      <option value="1">predavanje</option>
+      <option value="2">vježbe</option>
+      </select>
+     </li>
+    <li>
+    <label for="početak">Vrijeme početka:</label>
+              <input type="time" id="početak" name="appt"
+               min="09:00" max="18:00" required><br>
+      </li>
+      <li> <label for="kraj">Vrijeme kraja:</label></li>
+      <li>
+              <input type="time" id="kraj" name="appt"
+               min="09:00" max="18:00" required>
+      <li>
+      <label for="dani">Dan u sedmici:</label>
+      <select id="dani" name="dani">
+      <option value="1">ponedjeljak</option>
+      <option value="2">utorak</option>
+      <option value="3">srijeda</option>
+      <option value="4">četvrtak</option>
+      <option value="5">petak</option>
+      </select></li>
+    </ul>
+   </form>
+      
+</BODY>
+</HTML>
